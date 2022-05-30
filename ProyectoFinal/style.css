@@ -3,33 +3,65 @@ html {
 }
 
 body {
-    margin: 0px;
+    margin: 0 auto;
     background-color: #efefef;
+}
+
+.portada {
+    background-image: url("Imagenes/portada.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px;
 }
 
 header {
     background-color: #206C7F;
     padding: 0.5rem 2rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 header img {
     width: 50px;
+    padding-right: 10px;
+
 }
 
 header h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: left;
+    margin-right: auto;
+}
+
+h3 {
+    color: #206C7F;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .nav-menu {
     display: flex;
     margin-right: 40px;
     list-style: none;
+    
 }
 
 .nav-link {
@@ -38,14 +70,15 @@ nav {
 }
 .nav-menu-item {
     font-size: 10px;
-    margin: 0 10px;
-    line-height: 20px;
+    margin: 0 5px  ;
+    line-height: 10px;
     text-transform: uppercase;
 }
 
 .nav-menu-link {
-    padding: 4px 6px;
+    padding: 4px 4px;
     border-radius: 2px;
+    transition: all 0.4s linear;
 
 }
 
@@ -64,6 +97,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
 }   
 
 .servicio {
@@ -107,12 +141,12 @@ footer {
 
 .formu {
     width: 100%;
-    max-width: 600px;
+    max-width: 250px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 }
 
 
@@ -134,3 +168,4 @@ footer a {
 footer a:hover {
     color: red;
 }
+

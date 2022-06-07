@@ -10,14 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
-      <div class="portada">
-        
+      <!--<div class="portada"> </div>-->
+    <div class="banner">
+        <div class="banner-conte">
+          <h1>Welds Distribution Center</h1>
+          <a href="">mas informacion</a>
+        </div>
     </div>
+   
     <header id="titulo">
         <div class="encabezado">
+        
             <img src="Imagenes/WELDS.png">
             <h1>Welds Distribution Center</h1>
             <nav>
@@ -55,25 +62,53 @@
             
                 <article id="Productos">
                     <h3>Productos</h3>
+                        <div class="Tarjetas">
+                            <div class="tarjeta">
+                                <h4>Servicio</h4>
+                                <img src="./Imagenes/welds1.avif" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quidem. Unde expedita facere quisquam voluptates.</p>
+                                <button class="btn">Comprar</button>
+                            </div>
+                            <div class="tarjeta">
+                                <h4>Cortes</h4>
+                                <img src="./Imagenes/welds1.avif" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quidem. Unde expedita facere quisquam voluptates.</p>
+                                <button class="btn">Comprar</button>
+                            </div>
+                            <div class="tarjeta">
+                                <h4>Soldadura</h4>
+                                <img src="./Imagenes/welds1.avif" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quidem. Unde expedita facere quisquam voluptates.</p>
+                                <button class="btn">Comprar</button>
+                            </div>
+
+                        </div>
+
+
+                        <!-- 
                         <div class="centrado"> 
                             <div class="servicio">
                                 <h4>Servicio</h4>
-                                <img src="Imagenes/welds1.avif" width="200">
-                                <p>Contamos con un gran grupo de personal certificado por las principales marcas del mercado.</p>
+                                <img src="Imagenes/welds1.avif">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum sunt maxime voluptates in? Id, vel.</p>
+                                <button>Comprar</button>
                             </div>
                         
                             <div class="cortes">
                                 <h4>Cortes</h4>
-                                <img src="Imagenes/welds2.avif" width="200">
-                                <p>Contamos con la mejor maquinaria para corte laser.</p>
+                                <img src="Imagenes/welds1.avif">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum sunt maxime voluptates in? Id, vel.</p>
+                                <button>Comprar</button>
                             </div>
 
                             <div class="soldaduras">
                                 <h4>Soldaduras</h4>
-                                <img src="Imagenes/welder.jpg" width="200">
-                                <p>Tenemos a su disposicion una gran variedad de soldaduras.</p>
+                                <img src="Imagenes/welds1.avif">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum sunt maxime voluptates in? Id, vel.</p>
+                                <button>Comprar</button>
                             </div>
                         </div>
+                        -->
                 </article>
                 
 
@@ -92,11 +127,16 @@
 
                 <article id="Tienda">
                     <h3>Tienda</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vero explicabo, accusantium ipsam quibusdam nobis saepe rem, exercitationem tempore facere numquam labore vitae ullam optio sunt commodi, a natus. Eligendi!</p>
+                    <div class="tienda">
+                        <div class="tex">
+                            <h2>Proximamente</h2>
+                            <p>Seguimos Trabajando</p>
+                        </div>
+                        
+                        <img src="./Imagenes/tienda.jpg" alt="">
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vero explicabo, accusantium ipsam quibusdam nobis saepe rem, exercitationem tempore facere numquam labore vitae ullam optio sunt commodi, a natus. Eligendi!</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vero explicabo, accusantium ipsam quibusdam nobis saepe rem, exercitationem tempore facere numquam labore vitae ullam optio sunt commodi, a natus. Elijaaaa</p>
+                    </div>
+                  
                 </article>
         </div>
     </main>
@@ -123,15 +163,15 @@
                         <div class="form">
                             <h5>Contactanos</h5>
                             <div class="grupo">
-                                <input type="text" name="" id="nomrbre" required><span class="barra"></span>
+                                <input type="text" name="" id="nombre" required><span class="barra"></span>
                                 <label for="">Nombre</label>
                             </div>
                             <div class="grupo">
-                                <input type="email" name="" id="nomrbre" required><span class="barra"></span>
+                                <input type="email" name="" id="email" required><span class="barra"></span>
                                 <label for="">email</label>
                             </div>
                             <div class="grupo">
-                                <input type="comentarios" name="" id="nomrbre" required><span class="barra"></span>
+                                <input type="comentarios" name="" id="comentarios" required><span class="barra"></span>
                                 <label for="">comentarios</label>
                             </div>
                             <button type="submit">Enviar</button>
@@ -149,7 +189,8 @@
         
         <div class="copyright">
             <hr>
-            <p>Desarrollado por | gilgarzadev <i class="fa-brands fa-github"></i></p>
+            <p>Desarrollado por | <a href="https://github.com/gilgarzadev" target="_blank" >gilgarzadev</a></p>
+            <i class="fa-brands fa-github"></i>
 
         </div>
 

@@ -1,4 +1,8 @@
-
+* {
+    -margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
     font-family: 'Montserrat', sans-serif;
@@ -9,6 +13,7 @@ body {
     background-color: #efefef;
     
 }
+
 
 .portada {
     background-image: url("Imagenes/portada.jpg");
@@ -64,12 +69,47 @@ body {
     color: #333;
 }
 
+.nosotros {
+    display: flex;
+    padding: 80px 0;
+    
+}
+
+.nosotros_texto h2{
+    color: #206C7F;
+    width: 550px;
+}
+
+.nosotros_texto p {
+     font-size: 16px;
+}
+
+.nosotros_foto {
+    display: inline;
+    margin: auto 10px;
+}
+
+.empresas {
+    display: flex;
+    padding: 80px 0;
+}
+
+.empresas h2 {
+    color: #206C7F;
+}
+
+.empresas_texto p {
+    font-size: 16px;
+}
 
 .encabezado {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 @keyframes banner{
     0% {
@@ -102,8 +142,9 @@ body {
 main {
     width: 90%;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 70px;   
 }
+
 
 header {
     background-color: #206C7F;
@@ -136,9 +177,20 @@ nav {
     
 }
 
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 30px;
+    line-height: 30px;
+    cursor: pointer;
+    display: none; 
+}
+
 .nav-menu {
     display: flex;
-    margin-right: 40px;
+    margin-right: 100px;
     list-style: none;
     
 }
@@ -171,6 +223,8 @@ nav {
     margin: 10px;
 }
 
+
+
 .centrado {
     width: 90%;
     display: flex;
@@ -179,7 +233,70 @@ nav {
     
 }   
 
-.tarjeta {
+
+.Tarjetas {
+    display: grid;
+    -height: 800px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "tarjeta1 tarjeta1 tarjeta2 tarjeta2"
+                         "tarjeta1 tarjeta1 tarjeta2 tarjeta2"
+                         "tarjeta1 tarjeta1 tarjeta3 tarjeta4"
+                         "tarjeta1 tarjeta1 tarjeta3 tarjeta4";
+                        
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; 
+    -justify-items: center;
+    -align-items: center;
+    justify-content: center;
+}
+    
+.tarjeta1 {
+    grid-area: tarjeta1; 
+    background-color: #C5D8DE;
+    justify-self: unset; 
+    text-align: center;
+    -width: fit-content;
+    -height: fit-content;
+}
+.tarjeta1 img {
+    width: 550px;
+}
+
+
+.tarjeta2 { 
+    grid-area: tarjeta2;
+    background-color: #C5D8DE;
+    justify-self: unset;
+    text-align: center;
+ }
+
+.tarjeta2 img {
+    width: 200px;
+}
+
+.tarjeta3 {
+     grid-area: tarjeta3; 
+     background-color: #C5D8DE;
+     justify-self: unset;
+     text-align: center;
+}
+
+.tarjeta3 img {
+    width: 200px;
+}
+.tarjeta4 { 
+    grid-area: tarjeta4;
+    background-color: #C5D8DE;
+    justify-self: unset;
+    text-align: center;
+} 
+.tarjeta4 img {
+    width: 200px;
+}
+
+/*.tarjeta {
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -198,7 +315,7 @@ nav {
 
 .btn {
     color: white;
-}
+}*/
 
 /*Tarjetas Viejas*/
 /*.servicio {
@@ -242,10 +359,10 @@ nav {
 
 .conteiner_footer {
     display: flex;
-    flex-wrap: wrap;
+    -flex-wrap: wrap;
     justify-content: space-between;
-    --max-width: 1200px;
-    margin: auto;
+    -width: 100%;
+    -margin: auto;
 }
 
 
@@ -529,16 +646,225 @@ button {
 
 
 
+@media screen and (max-width: 480px) {
+  
+    header {
+        background-color: #206C7F;
+        width: 100%;  
+        padding: 5px;
+    }
 
 
+    .encabezado h1{
+        font-size: 15px;
+    }
+ 
+    .nav-menu {
+        flex-direction: column; 
+        align-items: center;
+        list-style: none;
+        margin: 0; 
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        padding: 20px 0;
+        left: 100%;
+        transition: left 0.3s;
 
 
+    } 
+
+    .nav-menu-item{
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover{
+        background: none;
+        color: white;
+    } 
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+             
+    }
+    
+    .nosotros {
+        display: flex;
+        margin-top: -50px;
+        -text-align: center;
+
+    }
+    .nosotros_foto {
+        width: 432px;
+    }
+
+    .nosotros_foto img{
+        width: 400px;
+        text-align: center;
+    }
+
+    .empresas {
+        display: flex;
+        flex-direction: column;
+        margin-top: -80px;
+        -text-align: center;
+    }
+    
+    .empresas_logos_foto {
+        text-align: center;
+    }
+
+  
+    
+    .Tarjetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta1 img {
+        width: 200px
+    }
+    
+    .tex {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 100px;
+        font-size: 25px;
+    }
+    .tienda img {
+        display: none;
+    }
+
+    .piepagina {
+        background-color: #72A2AE;
+        padding: 1rem;
+        
+        
+    }
+    .conteiner_footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+    }
+    
+    .socialmedia {
+        display: none;
+         
+    }
+
+    
+}
 
 
+@media screen and (max-width: 780px) {
+    
+    header {
+        background-color: #206C7F;
+        width: 100%;  
+        padding: 5px;
+    }
 
 
+    .encabezado h1{
+        font-size: 15px;
+    }
+ 
+    .nav-menu {
+        flex-direction: column; 
+        align-items: center;
+        list-style: none;
+        margin: 0; 
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        padding: 20px 0;
+        left: 100%;
+        transition: left 0.3s;
 
 
+    } 
 
+    .nav-menu-item{
+        line-height: 70px;
+    }
 
+    .nav-menu-link:hover{
+        background: none;
+        color: white;
+    } 
 
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+             
+    }
+
+    .Tarjetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta1 img {
+        width: 200px
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .nosotros_foto{
+        display: inline;
+        
+    }
+
+ 
+    
+    .tex {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 100px;
+        font-size: 25px;
+    }
+    .tienda img {
+        display: none;
+    }
+
+    .piepagina {
+        background-color: #72A2AE;
+        padding: 1rem;
+       
+    }
+
+    .dir {
+        text-align: center;
+    }
+    .conteiner_footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+    }
+    
+    .socialmedia {
+        display: none;
+         
+    }
+    
+}
